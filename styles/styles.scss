@@ -70,24 +70,24 @@ body {
       border: none;
       text-align: center;
     }
-    input[type='radio'] {
-      &::after {
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        top: -2px;
-        left: -1px;
-        position: relative;
-        background-color: #fff;
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 1.5px solid #d8f1fe;
-      }
-      &:checked::after {
-        background-color: #d8f1fe;
-      }
-    }
+    // input[type='radio'] {
+    //   &::after {
+    //     width: 15px;
+    //     height: 15px;
+    //     border-radius: 15px;
+    //     top: -2px;
+    //     left: -1px;
+    //     position: relative;
+    //     background-color: #fff;
+    //     content: '';
+    //     display: inline-block;
+    //     visibility: visible;
+    //     border: 1.5px solid #d8f1fe;
+    //   }
+    //   &:checked::after {
+    //     background-color: #d8f1fe;
+    //   }
+    // }
     .input__find {
       width: 100%;
       height: 60px;

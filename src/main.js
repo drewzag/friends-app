@@ -6,14 +6,6 @@ const GENDER = 'gender'
 const MALE = 'male'
 const FEMALE = 'female'
 
-const resetButton = document.querySelector('.reset')
-resetButton.addEventListener('click', () => {
-  console.log(url.origin)
-  history.replaceState('', '', '/')
-  history.go()
-  showUsers()
-})
-
 const menuButton = document.querySelector('.menu')
 const header = document.querySelector('.header')
 menuButton.addEventListener('click', () => {
@@ -90,6 +82,23 @@ const showUsers = async (amount) => {
     url.searchParams.set(GENDER, FEMALE)
     history.pushState('', '', url.href)
     displayUsers(filterByGender(users, GENDER, FEMALE))
+  })
+
+  const resetButton = document.querySelector('.reset')
+  resetButton.addEventListener('click', () => {
+    url.searchParams.set('gender', '')
+    url.searchParams.set('sort', '')
+    url.searchParams.set('name', '')
+    const sortNodes = document.querySelectorAll('input[type="radio"]')
+    sortNodes.forEach((node) => {
+      if (node.defaultValue === 'all') {
+        node.checked = true
+      } else node.checked = false
+    })
+    inputFind.value = ''
+    history.pushState('', '', url.href)
+    header.classList.remove('open')
+    displayUsers(users)
   })
 }
 
