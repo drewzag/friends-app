@@ -149,7 +149,7 @@ body {
   .header__wrapper {
     .header {
       flex-direction: column;
-      top: -300px;
+      top: -500px;
       font-size: 2rem;
     }
     .header.open {
@@ -157,7 +157,7 @@ body {
       background-color: #f3f4f6;
       font-size: 2rem;
       right: 50%;
-      transform: translate(50%, 370px);
+      transform: translate(50%, 570px);
     }
   }
 }
