@@ -1,4 +1,4 @@
-import { getRandomUsers } from '/src/data.js'
+import { getRandomUsers } from './data.js'
 import { isQueryParams, filterByName, filterByGender, sortUsers } from './helpers.js'
 
 const NAME = 'name'
