@@ -1,3 +1,3 @@
-## Friends App
+# Friends App
 
-# Task from Kottans
+### Task from Kottans
